@@ -11,9 +11,6 @@ class RegistrationForm:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
-
     def click_free_period_button(self):
         self.free_period_button.click()
 

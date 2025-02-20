@@ -9,9 +9,6 @@ class SearchContentForm:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
-
     def type_search_text(self, value):
         self.search_form.type(value).press_enter()
 
