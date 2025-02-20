@@ -8,8 +8,8 @@ class CartoonsPage:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
+        # browser.driver.execute_script("$('#fixedban').remove()")
+        # browser.driver.execute_script("$('footer').remove()")
 
     def click_button_cartoons(self):
         self.button_cartoons.click()
