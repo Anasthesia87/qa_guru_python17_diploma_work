@@ -8,9 +8,6 @@ class NewContentPage:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
-
     def click_button_new_content(self):
         self.button_new_content.click()
 

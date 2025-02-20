@@ -14,9 +14,6 @@ class SerialsPage:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
-
     def click_button_serials(self):
         self.button_serials.click()
 

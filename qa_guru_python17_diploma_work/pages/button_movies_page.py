@@ -9,9 +9,6 @@ class MoviesPage:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
-
     def click_button_movies(self):
         self.button_movies.click()
 

@@ -9,9 +9,6 @@ class TvPage:
     def open(self):
         browser.open("")
 
-        browser.driver.execute_script("$('#fixedban').remove()")
-        browser.driver.execute_script("$('footer').remove()")
-
     def click_button_tv(self):
         self.button_tv.click()
 

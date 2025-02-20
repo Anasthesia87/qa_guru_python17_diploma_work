@@ -10,9 +10,6 @@ class MoviesOnTvPage:
     def open(self):
         browser.open("")
 
-        # browser.driver.execute_script("$('#fixedban').remove()")
-        # browser.driver.execute_script("$('footer').remove()")
-
     def click_button_movies_on_tv(self):
         sleep(10)
         self.button_movies_on_tv.click()
