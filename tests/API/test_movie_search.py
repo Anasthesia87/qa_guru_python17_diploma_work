@@ -1,7 +1,7 @@
 import allure
 from jsonschema import validate
 
-from schemas import search_movie_schema
+from qa_guru_python17_diploma_work.schemas.schemas import search_movie_schema
 
 from qa_guru_python17_diploma_work.utils.api_helper import api_request
 
@@ -23,4 +23,5 @@ def test_movie_search_api_validate_response(base_api_url):
     with allure.step('alias = zhitzhizn'):
         assert response.json()["items"][0]["alias"] == "zhitzhizn"
     with allure.step('Validate response schema'):
-        validate(response.json(), search_movie_schema)
+        body = response.json()
+        validate(body, search_movie_schema)

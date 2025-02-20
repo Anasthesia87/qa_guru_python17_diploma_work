@@ -3,7 +3,7 @@ import os
 from selene import browser
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
-from utils import attach
+from qa_guru_python17_diploma_work.utils import attach
 from dotenv import load_dotenv
 
 DEFAULT_BROWSER_NAME = "chrome"
