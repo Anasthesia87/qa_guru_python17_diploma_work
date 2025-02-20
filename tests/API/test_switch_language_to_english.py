@@ -12,6 +12,6 @@ def test_switch_language_api(base_api_url):
     with allure.step('Status code=200'):
         assert response.status_code == 200
     with allure.step('Validate headers'):
-        assert response.headers['Content-Type'] == 'text/html; charset=UTF-8'
+        assert response.headers['Content-Type'] == 'text/html; charset=utf-8'
     with allure.step('Validate language'):
         assert 'START user agreement' in response.text

@@ -1,7 +1,7 @@
 import allure
 from qa_guru_python17_diploma_work.utils.api_helper import api_request
 from jsonschema import validate
-from qa_guru_python17_diploma_work.schemas import tv_channels_schema
+from qa_guru_python17_diploma_work.schemas.schemas import tv_channels_schema
 
 
 @allure.title("Checking tv channels")
