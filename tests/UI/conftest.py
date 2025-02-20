@@ -7,12 +7,12 @@ from qa_guru_python17_diploma_work.utils import attach
 from dotenv import load_dotenv
 
 DEFAULT_BROWSER_NAME = "chrome"
-DEFAULT_BROWSER_VERSION = "135.0.7012.4"
+DEFAULT_BROWSER_VERSION = "126.0"
 
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", default="chrome")
-    parser.addoption("--browser_version", default="135.0.7012.4")
+    parser.addoption("--browser_version", default="126.0")
 
 
 @pytest.fixture(scope='session', autouse=True)
