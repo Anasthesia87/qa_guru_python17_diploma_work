@@ -7,12 +7,12 @@ from qa_guru_python17_diploma_work.utils import attach
 from dotenv import load_dotenv
 
 DEFAULT_BROWSER_NAME = "chrome"
-DEFAULT_BROWSER_VERSION = " 135.0.7012.4"
+DEFAULT_BROWSER_VERSION = "135.0.7012.4"
 
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", default="chrome")
-    parser.addoption("--browser_version", default=" 135.0.7012.4")
+    parser.addoption("--browser_version", default="135.0.7012.4")
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -25,8 +25,8 @@ def setup_browser(request):
     browser_name = request.config.getoption('browser_name') or DEFAULT_BROWSER_NAME
     browser_version = request.config.getoption('browser_version') or DEFAULT_BROWSER_VERSION
     options = Options()
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
+    #options.add_argument('--no-sandbox')
+    #options.add_argument('--disable-dev-shm-usage')
     selenoid_capabilities = {
         "browserName": browser_name,
         "browserVersion": browser_version,
