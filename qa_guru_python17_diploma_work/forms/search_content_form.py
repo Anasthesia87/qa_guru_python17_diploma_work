@@ -19,4 +19,4 @@ class SearchContentForm:
         browser.element('.Search_search_global_wrapper__xpyTs').should(match.text('Любовь Аксёнова'))
 
     def verify_search_tv_channel_results(self):
-        browser.element('.Search_search_global_wrapper__xpyTs').should(match.text('Телекомпания НТВ'))
+        browser.element('.Search_search_global_wrapper__xpyTs').should(match.text('Телеканалы'))
