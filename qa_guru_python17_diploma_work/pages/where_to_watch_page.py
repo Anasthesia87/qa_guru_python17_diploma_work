@@ -1,6 +1,7 @@
 from selene import browser
 from selene_in_action_py13.conditions import match
 
+
 class WhereToWatch:
 
     def open(self):

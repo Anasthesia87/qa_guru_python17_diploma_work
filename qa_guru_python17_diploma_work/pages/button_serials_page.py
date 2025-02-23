@@ -1,6 +1,7 @@
 from selene import browser
 from selene_in_action_py13.conditions import match
 
+
 class SerialsPage:
     def __init__(self):
         self.button_serials = browser.element('[data-testid="series_button"]')
@@ -27,7 +28,8 @@ class SerialsPage:
         self.genre_checkbox.click()
 
     def check_serials_page_title_with_filter_by_genre(self):
-        browser.element('.CatalogRedesigned_page_wrapper__uuM_W').should(match.text('Сериалы: биография - смотреть онлайн'))
+        browser.element('.CatalogRedesigned_page_wrapper__uuM_W').should(
+            match.text('Сериалы: биография - смотреть онлайн'))
 
     def click_button_year(self):
         self.button_year.click()
@@ -36,5 +38,5 @@ class SerialsPage:
         self.year_checkbox.click()
 
     def check_serials_page_title_with_filter_by_year(self):
-        browser.element('.CatalogRedesigned_page_wrapper__uuM_W').should(match.text('Сериалы: 2025 года - смотреть онлайн'))
-
+        browser.element('.CatalogRedesigned_page_wrapper__uuM_W').should(
+            match.text('Сериалы: 2025 года - смотреть онлайн'))

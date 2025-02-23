@@ -25,8 +25,8 @@ def setup_browser(request):
     browser_name = request.config.getoption('browser_name') or DEFAULT_BROWSER_NAME
     browser_version = request.config.getoption('browser_version') or DEFAULT_BROWSER_VERSION
     options = Options()
-    #options.add_argument('--no-sandbox')
-    #options.add_argument('--disable-dev-shm-usage')
+    # options.add_argument('--no-sandbox')
+    # options.add_argument('--disable-dev-shm-usage')
     selenoid_capabilities = {
         "browserName": browser_name,
         "browserVersion": browser_version,

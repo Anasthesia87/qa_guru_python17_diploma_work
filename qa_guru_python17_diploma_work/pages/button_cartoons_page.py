@@ -1,6 +1,7 @@
 from selene import browser
 from selene_in_action_py13.conditions import match
 
+
 class CartoonsPage:
     def __init__(self):
         self.button_cartoons = browser.element('[data-testid="animation_button"]')

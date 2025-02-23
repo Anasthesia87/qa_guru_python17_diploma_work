@@ -1,5 +1,6 @@
 from selene import browser
 
+
 class AuthorizationForm:
     def __init__(self):
         self.free_period_button = browser.element('.Button_text__CEKtw')
