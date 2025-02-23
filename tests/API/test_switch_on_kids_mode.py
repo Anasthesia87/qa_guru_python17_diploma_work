@@ -9,14 +9,16 @@ def test_switch_on_kids_mode_api(base_api_url):
     endpoint = "/profile/select"
     params = {"apikey": "a20b12b279f744f2b3c7b5c5400c4eb5"}
     payload = {
-        "profile_id": "eddf9ed1-4bee-4e00-ab3e-d4850179b9b1"
+        "profile_id": "66eb0a9d-3afa-4607-acf0-b608597fd6a4"
     }
 
     headers = {
         'content-type': 'application/json',
         'Cookie': 'auth=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9'
-                  '.eyJ1aWQiOiI2N2FjZmVhNjdmMTkyYjUyMTBhNWIyNjYiLCJwaWQiOiJlZGRmOWVkMS00YmVlLTRlMDAtYWIzZS1kNDg1MDE3OWI5YjEiLCJkaWQiOiI1MDNmNzhiYi03MTU3LTRlNmItOTk5Zi1kODQwOTI4OTQ2YjEiLCJhbm9ueW1vdXMiOmZhbHNlLCJmb3Jfa2lkcyI6dHJ1ZSwiYWNjb3VudF90eXBlIjoidmlydHVhbCIsImFjbF9leHBpcmUiOm51bGwsInVwZGF0ZWRfYXQiOjE3Mzk5OTU1ODUsInYiOjN9'
-                  '.XBW0kSgoPTwW5hmJ6ba1qarrKtK3fSXXddYbw930c90'
+                  '.eyJ1aWQiOiI2NjE0NGEzY2JiOTliZDNlZjNkMjYwZjUiLCJwaWQiOiI1OTM4Njc2My1hN2FiLTQ4YzUtOWIzYy03YjhmOTI3M'
+                  'jA2NTAiLCJkaWQiOiIwZjcyMGVhNC03NDQwLTQxOGMtOTg2Mi1hYWY0MDIzNTY4YWUiLCJhbm9ueW1vdXMiOmZhbHNlLCJmb3J'
+                  'fa2lkcyI6ZmFsc2UsImFjY291bnRfdHlwZSI6InJlZ2lzdGVyZWQiLCJhY2xfZXhwaXJlIjpudWxsLCJ1cGRhdGVkX2F0IjoxN'
+                  'zEyOTk1MTcwLCJ2IjozfQ.sIZfIJhvyQmVRvpT_xTievBH9VUIBJT5RY6ezVGr6uU'
     }
     response = api_request(base_api_url, endpoint, "POST", params=params, json=payload, headers=headers)
 
@@ -25,4 +27,4 @@ def test_switch_on_kids_mode_api(base_api_url):
     with allure.step('Validate schema'):
         validate(response.json(), switch_on_kids_mode_schema)
     with allure.step('Validate headers'):
-        assert response.json()['profile_id'] == 'eddf9ed1-4bee-4e00-ab3e-d4850179b9b1'
+        assert response.json()['profile_id'] == '59386763-a7ab-48c5-9b3c-7b8f92720650'
