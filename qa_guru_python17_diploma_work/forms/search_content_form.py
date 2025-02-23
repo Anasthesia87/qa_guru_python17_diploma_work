@@ -17,6 +17,3 @@ class SearchContentForm:
 
     def verify_search_person_results(self):
         browser.element('.Search_search_global_wrapper__xpyTs').should(match.text('Любовь Аксёнова'))
-
-    def verify_search_tv_channel_results(self):
-        browser.element('.Search_search_global_wrapper__xpyTs').should(match.text('Телеканалы'))
