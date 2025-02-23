@@ -20,8 +20,8 @@ def test_movie_search_api_validate_response(base_api_url):
 
     with allure.step('Status code=200'):
         assert response.status_code == 200
-    with allure.step('alias = zhit-zhizn'):
-        assert response.json()["items"][0]["alias"] == "zhit-zhizn-1-sezon"
+    with allure.step('alias = zhitzhizn'):
+        assert response.json()["items"][0]["alias"] == "zhitzhizn"
     with allure.step('Validate response schema'):
         body = response.json()
         validate(body, search_movie_schema)
