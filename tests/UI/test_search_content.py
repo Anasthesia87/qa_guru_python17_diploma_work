@@ -35,7 +35,7 @@ def test_search_content_tv_channel():
     search_content_form.open()
 
     with allure.step('Type search tv channel'):
-        search_content_form.type_search_text('нтв')
+        search_content_form.type_search_text('первый канал')
 
     with allure.step('Verify search tv channel results'):
         search_content_form.verify_search_tv_channel_results()
