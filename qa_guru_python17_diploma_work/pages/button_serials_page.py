@@ -29,15 +29,6 @@ class SerialsPage:
     def check_serials_page_title_with_filter_by_genre(self):
         browser.element('.CatalogRedesigned_page_wrapper__uuM_W').should(match.text('Сериалы: биография - смотреть онлайн'))
 
-    def click_button_country(self):
-        self.button_country.click()
-
-    def select_country(self):
-        self.country_checkbox.click()
-
-    def check_serials_page_title_with_filter_by_country(self):
-        browser.element('.CatalogRedesigned_page_wrapper__uuM_W').should(match.text('Сериалы - Австралия смотреть онлайн'))
-
     def click_button_year(self):
         self.button_year.click()
 

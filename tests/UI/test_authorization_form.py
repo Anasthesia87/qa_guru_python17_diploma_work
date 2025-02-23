@@ -29,4 +29,4 @@ def test_authorization_by_telephone_number_forgot_password():
         authorization_form.continue_button.click()
 
     with allure.step('Check text message'):
-        browser.element('.AuthSteps_container__UAEzf').should(match.text('Введите код из СМС,'))
+        browser.element('.AuthSteps_container__UAEzf').should(match.text('Восстановление пароля'))
