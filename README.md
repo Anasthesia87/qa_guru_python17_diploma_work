@@ -29,12 +29,12 @@
 |<img src="sources/python-original.svg" height="45" width="45" />|<img src="sources/pytest-original.svg" height="55" width="55" />|<img src="sources/selenium-original.svg" height="40" width="40" />|<img src="sources/selenoid.svg" height="50" width="50" />|<img src="sources/allure.svg" height="40" width="40" />|<img src="sources/git-original.svg" height="40" width="40"/>|<img src="sources/jenkins-original.svg" height="45" width="45"/>|<img src="sources/telegram.svg" height="35" width="35"/>| <img src="sources/allure_testops.png" height="35" width="35"/> |
 
 ### Запуск автотестов выполняется на сервере Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/test_qa_guru_python_17_diploma_work_Ops_and_notification(A_L)/">Ссылка на проект в Jenkins для запуска тестов</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/test_qa_guru_python_17_diploma_work_Ops_and_notification(A_L)/">Ссылка на проект в Jenkins для запуска тестов</a>
 
 
 #### Для запуска автотестов в Jenkins
 
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/test_qa_guru_python_17_diploma_work_Ops_and_notification(A_L)/">Проект в Jenkins для запуска тестов</a> 
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/test_qa_guru_python_17_diploma_work_Ops_and_notification(A_L)/">Проект в Jenkins для запуска тестов</a> 
 2. Выбрать пункт `Build with Parameters`
 3. Выбрать окружение в выпадающем списке ENVIRONMENT
 4. Выбрать браузер в BROWSER_NAME
