@@ -5798,7 +5798,7 @@ search_movie_schema = {
                       "type": "string"
                     },
                     "image_1x": {
-                      "type": "null"
+                      "type": "string"
                     },
                     "text": {
                       "type": "string"
