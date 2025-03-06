@@ -1058,7 +1058,7 @@ search_movie_schema = {
                   "type": "null"
                 },
                 "image_15x": {
-                  "type": "string"
+                  "type": "null"
                 }
               },
               "required": [
@@ -1508,7 +1508,7 @@ search_movie_schema = {
                   "type": "null"
                 },
                 "image_15x": {
-                  "type": "string"
+                  "type": "null"
                 }
               },
               "required": [
@@ -2543,7 +2543,7 @@ search_movie_schema = {
                   "type": "null"
                 },
                 "image_15x": {
-                  "type": "string"
+                  "type": "null"
                 }
               },
               "required": [
