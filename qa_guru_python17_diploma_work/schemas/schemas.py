@@ -6677,7 +6677,7 @@ search_movie_schema = {
               "type": "object",
               "properties": {
                 "image_1x": {
-                  "type": "string"
+                  "type": "null"
                 },
                 "image_15x": {
                   "type": "null"
