@@ -1058,7 +1058,7 @@ search_movie_schema = {
                   "type": "null"
                 },
                 "image_15x": {
-                  "type": "null"
+                  "type": "string"
                 }
               },
               "required": [
